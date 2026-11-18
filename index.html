@@ -4,31 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小金馬金工 Jinma Atelier | 頂級金工與珠寶訂製</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Noto+Serif+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Noto Serif TC', serif;
-            background-color: #FBF9F5;
-            color: #232323;
-        }
-        .font-playfair {
-            font-family: 'Playfair Display', serif;
-        }
+        body { font-family: 'Noto Serif TC', serif; background-color: #FBF9F5; color: #232323; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<body class="bg-[#FBF9F5] text-[#232323] antialiased selection:bg-[#D5E1DC] selection:text-[#232323]">
+<body class="bg-[#FBF9F5] text-[#232323] antialiased">
 
-    <!-- 導覽列 (Header) -->
-    <header class="sticky top-0 z-40 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-[#EAE5D9] transition-all duration-300">
+    <!-- 導覽列 -->
+    <header class="sticky top-0 z-40 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-[#EAE5D9]">
         <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
-            <a href="#home" class="flex items-center gap-3 group">
+            <a href="index.html" class="flex items-center gap-3 group">
                 <div class="w-12 h-12 rounded-full border border-[#D4AF37] flex items-center justify-center bg-[#D5E1DC]/30 overflow-hidden shadow-sm">
-                    <!-- 搖馬圖騰簡化示範 -->
                     <svg viewBox="0 0 100 100" class="w-7 h-7 text-[#232323]" fill="currentColor">
                         <path d="M50 15 C30 15 15 30 15 50 C15 70 30 85 50 85 C70 85 85 70 85 50 C85 30 70 15 50 15 Z" fill="#D4AF37"/>
                     </svg>
@@ -38,173 +27,89 @@
                     <span class="text-[10px] tracking-[0.25em] text-[#666666] block">小金馬金工</span>
                 </div>
             </a>
-
             <nav class="hidden md:flex items-center space-x-8 text-xs tracking-widest">
-                <a href="#home" class="hover:text-[#D4AF37] transition-colors py-2">首頁</a>
-                <a href="#courses" class="hover:text-[#D4AF37] transition-colors py-2">體驗課程</a>
-                <a href="#custom" class="hover:text-[#D4AF37] transition-colors py-2">珠寶訂製</a>
-                <a href="#handdrawn" class="hover:text-[#D4AF37] transition-colors py-2">手繪/手寫系列</a>
-                <a href="#gallery" class="hover:text-[#D4AF37] transition-colors py-2">作品展示</a>
+                <a href="index.html" class="text-[#D4AF37] font-semibold py-2">首頁</a>
+                <a href="courses.html" class="hover:text-[#D4AF37] transition-colors py-2">體驗課程</a>
+                <a href="custom.html" class="hover:text-[#D4AF37] transition-colors py-2">珠寶訂製</a>
+                <a href="handdrawn.html" class="hover:text-[#D4AF37] transition-colors py-2">手繪/手寫系列</a>
+                <a href="gallery.html" class="hover:text-[#D4AF37] transition-colors py-2">作品展示</a>
             </nav>
-
-            <a href="#contact" class="hidden lg:inline-block px-6 py-2 border border-[#232323] text-xs tracking-[0.2em] uppercase hover:bg-[#232323] hover:text-[#FBF9F5] transition-all duration-300">
-                預約諮詢
-            </a>
+            <a href="#contact" class="hidden lg:inline-block px-6 py-2 border border-[#232323] text-xs tracking-[0.2em] uppercase hover:bg-[#232323] hover:text-[#FBF9F5] transition-all">預約諮詢</a>
         </div>
     </header>
 
-    <!-- 1. 首頁 Hero -->
-    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-[#D5E1DC]/15 px-6">
+    <!-- 首頁 Hero -->
+    <section class="relative min-h-[85vh] flex items-center justify-center bg-[#D5E1DC]/15 px-6">
         <div class="max-w-4xl mx-auto text-center py-20">
             <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-semibold mb-4 block">Jinma Atelier Kaohsiung</span>
             <h1 class="font-playfair text-4xl md:text-6xl font-light tracking-wide text-[#232323] mb-6 leading-tight">
                 光影與金屬的交織<br><span class="italic font-normal">凝鍊永恆的工藝美學</span>
             </h1>
-            <p class="text-sm md:text-base text-[#555555] max-w-xl mx-auto font-light leading-relaxed mb-10">
+            <p class="text-sm md:text-base text-[#555] max-w-xl mx-auto font-light leading-relaxed mb-10">
                 從手作對戒、寶石鑲嵌到童心繪本轉化，在靜謐溫潤的空間中，為您刻劃獨一無二的溫暖記憶。
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#courses" class="w-full sm:w-auto px-8 py-3.5 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">探索體驗課程</a>
-                <a href="#custom" class="w-full sm:w-auto px-8 py-3.5 border border-[#232323] text-[#232323] text-xs tracking-[0.2em] uppercase hover:bg-[#D5E1DC]/40 transition-all">高級珠寶訂製</a>
+                <a href="courses.html" class="w-full sm:w-auto px-8 py-3.5 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">探索體驗課程</a>
+                <a href="custom.html" class="w-full sm:w-auto px-8 py-3.5 border border-[#232323] text-[#232323] text-xs tracking-[0.2em] uppercase hover:bg-[#D5E1DC]/40 transition-all">高級珠寶訂製</a>
             </div>
         </div>
     </section>
 
-    <!-- 2. 體驗課程 (可點擊看詳細) -->
-    <section id="courses" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-xl mx-auto mb-16">
-            <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Workshop Experience</span>
-            <h2 class="font-playfair text-3xl font-light tracking-wide text-[#232323]">工藝體驗課程</h2>
-            <div class="w-10 h-[1px] bg-[#D4AF37] mx-auto mt-4"></div>
-            <p class="text-xs text-[#666] mt-3 font-light">點擊下方項目可查看詳細課程內容、時長與報名須知</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <!-- 課程卡片 1 -->
-            <div onclick="openModal('course-1')" class="group bg-[#F5F2EC] border border-[#EAE5D9] p-6 cursor-pointer hover:shadow-xl transition-all duration-300">
-                <div class="h-64 overflow-hidden mb-6 relative">
-                    <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 bg-[#D5E1DC] text-[#232323] text-[10px] tracking-widest px-2.5 py-1 uppercase">熱門體驗</span>
-                </div>
-                <h3 class="font-playfair text-xl mb-2 text-[#232323]">手作對戒金工體驗</h3>
-                <p class="text-xs text-[#666] font-light line-clamp-2 mb-4">從鋸切、敲擊槌目紋理到焊接拋光，親手打造專屬兩人、無可取代的溫潤對戒。</p>
-                <span class="text-xs tracking-widest text-[#D4AF37] underline">查看詳細內容 &rarr;</span>
+    <!-- 各單元入口導覽區塊 -->
+    <section class="py-24 px-6 max-w-7xl mx-auto space-y-24">
+        <!-- 體驗課程預覽 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="h-80 overflow-hidden shadow-md">
+                <img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover">
             </div>
-
-            <!-- 課程卡片 2 -->
-            <div onclick="openModal('course-2')" class="group bg-[#F5F2EC] border border-[#EAE5D9] p-6 cursor-pointer hover:shadow-xl transition-all duration-300">
-                <div class="h-64 overflow-hidden mb-6 relative">
-                    <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
-                    <span class="absolute top-3 left-3 bg-[#D4AF37] text-[#FBF9F5] text-[10px] tracking-widest px-2.5 py-1 uppercase">進階工藝</span>
-                </div>
-                <h3 class="font-playfair text-xl mb-2 text-[#232323]">珠寶鑲嵌手作體驗</h3>
-                <p class="text-xs text-[#666] font-light line-clamp-2 mb-4">深入探索寶石世界，學習基礎爪鑲與包鑲，親手將晶石穩固鑲嵌於銀飾中。</p>
-                <span class="text-xs tracking-widest text-[#D4AF37] underline">查看詳細內容 &rarr;</span>
+            <div>
+                <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Workshop Experience</span>
+                <h2 class="font-playfair text-3xl font-light text-[#232323] mb-4">工藝體驗課程</h2>
+                <p class="text-xs text-[#666] font-light leading-relaxed mb-6">
+                    親手敲打專屬對戒、探索寶石鑲嵌。在職人溫柔的引導下，享受金屬從粗胚到璀璨的療癒手作時光。
+                </p>
+                <a href="courses.html" class="inline-block px-6 py-2.5 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">查看詳細課程內容 &rarr;</a>
             </div>
         </div>
-    </section>
 
-    <!-- 3. 珠寶訂製 (可點擊看詳細) -->
-    <section id="custom" class="py-24 bg-[#D5E1DC]/15 border-y border-[#EAE5D9] px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-xl mx-auto mb-16">
+        <!-- 珠寶訂製預覽 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
                 <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Bespoke Jewelry</span>
-                <h2 class="font-playfair text-3xl font-light tracking-wide text-[#232323]">高級珠寶訂製</h2>
-                <div class="w-10 h-[1px] bg-[#D4AF37] mx-auto mt-4"></div>
+                <h2 class="font-playfair text-3xl font-light text-[#232323] mb-4">高級珠寶訂製</h2>
+                <p class="text-xs text-[#666] font-light leading-relaxed mb-6">
+                    婚戒、彩色寶石鑲嵌與客製立體胸針。一對一私密諮詢，完美實現您對珠寶設計的獨特藍圖。
+                </p>
+                <a href="custom.html" class="inline-block px-6 py-2.5 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">探索訂製系列 &rarr;</a>
             </div>
+            <div class="h-80 overflow-hidden shadow-md order-1 md:order-2">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover">
+            </div>
+        </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div onclick="openModal('custom-1')" class="bg-white border border-[#EAE5D9] p-6 cursor-pointer hover:shadow-md transition-all">
-                    <div class="h-60 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover"></div>
-                    <h3 class="font-playfair text-lg mb-2">婚戒與求婚戒專屬訂製</h3>
-                    <p class="text-xs text-[#666] font-light mb-4">量身打造獨一無二的愛情信物，嚴選高品質鑽石與貴金屬。</p>
-                    <span class="text-[11px] text-[#D4AF37] tracking-widest underline">了解訂製流程 &rarr;</span>
-                </div>
-                <div onclick="openModal('custom-2')" class="bg-white border border-[#EAE5D9] p-6 cursor-pointer hover:shadow-md transition-all">
-                    <div class="h-60 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover"></div>
-                    <h3 class="font-playfair text-lg mb-2">彩色寶石與玉石鑲嵌</h3>
-                    <p class="text-xs text-[#666] font-light mb-4">結合專業寶石鑑定視野，設計出兼具現代美感與收藏價值的珠寶。</p>
-                    <span class="text-[11px] text-[#D4AF37] tracking-widest underline">了解訂製流程 &rarr;</span>
-                </div>
-                <div onclick="openModal('custom-3')" class="bg-white border border-[#EAE5D9] p-6 cursor-pointer hover:shadow-md transition-all">
-                    <div class="h-60 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover"></div>
-                    <h3 class="font-playfair text-lg mb-2">紀念日與胸針雕塑</h3>
-                    <p class="text-xs text-[#666] font-light mb-4">將自然花草或特定意象化為立體金屬雕塑與藝術胸針。</p>
-                    <span class="text-[11px] text-[#D4AF37] tracking-widest underline">了解訂製流程 &rarr;</span>
-                </div>
+        <!-- 手繪/手寫銀飾系列預覽 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="h-80 overflow-hidden shadow-md">
+                <img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover">
             </div>
+            <div>
+                <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Sentimental Collection</span>
+                <h2 class="font-playfair text-3xl font-light text-[#232323] mb-4">手繪 / 手寫銀飾訂製系列</h2>
+                <p class="text-xs text-[#666] font-light leading-relaxed mb-6">
+                    將孩子的童心塗鴉、親筆手寫字跡或獨特聲音波形，化為永恆隨身佩戴的純銀紀念信物。
+                </p>
+                <a href="handdrawn.html" class="inline-block px-6 py-2.5 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">查看手繪系列詳情 &rarr;</a>
+            </div>
+        </div>
+
+        <!-- 作品展示預覽 -->
+        <div class="text-center bg-[#D5E1DC]/20 py-16 px-6 border border-[#EAE5D9]">
+            <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Artistic Portfolio</span>
+            <h2 class="font-playfair text-3xl font-light text-[#232323] mb-4">精選作品展示</h2>
+            <p class="text-xs text-[#666] font-light max-w-xl mx-auto mb-8">探索小金馬金工歷年的匠心之作、競賽作品與精緻細節呈現。</p>
+            <a href="gallery.html" class="inline-block px-8 py-3 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">瀏覽完整作品集</a>
         </div>
     </section>
-
-    <!-- 4. 手繪/手寫銀飾訂製系列 (可點擊看詳細) -->
-    <section id="handdrawn" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="text-center max-w-xl mx-auto mb-16">
-            <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Sentimental Collection</span>
-            <h2 class="font-playfair text-3xl font-light tracking-wide text-[#232323]">手繪 / 手寫銀飾訂製系列</h2>
-            <div class="w-10 h-[1px] bg-[#D4AF37] mx-auto mt-4"></div>
-            <p class="text-xs text-[#666] mt-3 font-light">將最純粹的童心筆觸、親筆字跡與聲音波形，化為永恆金屬飾品</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div onclick="openModal('hand-1')" class="bg-[#F5F2EC] border border-[#EAE5D9] p-6 cursor-pointer group">
-                <div class="h-64 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition"></div>
-                <h3 class="font-playfair text-lg mb-2">兒童畫與手繪轉金屬</h3>
-                <p class="text-xs text-[#666] font-light mb-4">完美還原孩子稚嫩筆觸或您的靈感手繪，雕刻成立體銀墜。</p>
-                <span class="text-[11px] text-[#D4AF37] underline">查看詳細規格 &rarr;</span>
-            </div>
-            <div onclick="openModal('hand-2')" class="bg-[#F5F2EC] border border-[#EAE5D9] p-6 cursor-pointer group">
-                <div class="h-64 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition"></div>
-                <h3 class="font-playfair text-lg mb-2">手寫字跡與簽名字體</h3>
-                <p class="text-xs text-[#666] font-light mb-4">保留真實手寫溫度，將摯愛祝福字句轉化為隨身項鍊。</p>
-                <span class="text-[11px] text-[#D4AF37] underline">查看詳細規格 &rarr;</span>
-            </div>
-            <div onclick="openModal('hand-3')" class="bg-[#F5F2EC] border border-[#EAE5D9] p-6 cursor-pointer group">
-                <div class="h-64 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=600" class="w-full h-full object-cover group-hover:scale-105 transition"></div>
-                <h3 class="font-playfair text-lg mb-2">聲波記憶與符碼雕刻</h3>
-                <p class="text-xs text-[#666] font-light mb-4">將想說的話錄下轉換成獨一無二的聲波線條與情感共鳴。</p>
-                <span class="text-[11px] text-[#D4AF37] underline">查看詳細規格 &rarr;</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. 作品展示 (可點擊看放大細節) -->
-    <section id="gallery" class="py-24 bg-[#D5E1DC]/15 border-t border-[#EAE5D9] px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center max-w-xl mx-auto mb-16">
-                <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Artistic Portfolio</span>
-                <h2 class="font-playfair text-3xl font-light tracking-wide text-[#232323]">精選作品展示</h2>
-                <div class="w-10 h-[1px] bg-[#D4AF37] mx-auto mt-4"></div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-                <div onclick="openModal('work-1')" class="bg-white border border-[#EAE5D9] p-4 cursor-pointer group">
-                    <div class="h-72 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition"></div>
-                    <span class="text-[10px] text-[#D4AF37] tracking-widest uppercase block mb-1">Custom Ring</span>
-                    <h4 class="font-playfair text-base">流金歲月彩色寶石鑲嵌戒</h4>
-                </div>
-                <div onclick="openModal('work-2')" class="bg-white border border-[#EAE5D9] p-4 cursor-pointer group">
-                    <div class="h-72 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition"></div>
-                    <span class="text-[10px] text-[#D4AF37] tracking-widest uppercase block mb-1">Pendant</span>
-                    <h4 class="font-playfair text-base">手寫字跡純銀訂製項鍊</h4>
-                </div>
-                <div onclick="openModal('work-3')" class="bg-white border border-[#EAE5D9] p-4 cursor-pointer group">
-                    <div class="h-72 overflow-hidden mb-4"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-105 transition"></div>
-                    <span class="text-[10px] text-[#D4AF37] tracking-widest uppercase block mb-1">Workshop</span>
-                    <h4 class="font-playfair text-base">經典槌目紋對戒體驗</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 彈跳詳細資料視窗 (Modal System) -->
-    <div id="detailModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-        <div class="bg-[#FBF9F5] border border-[#D4AF37] max-w-2xl w-full p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-xl text-[#232323] hover:text-[#D4AF37]">&times;</button>
-            <div id="modalContent">
-                <!-- 動態載入詳細內容 -->
-            </div>
-        </div>
-    </div>
 
     <!-- 頁尾 -->
     <footer id="contact" class="bg-[#232323] text-[#FBF9F5] py-16 px-6">
@@ -224,10 +129,10 @@
             <div>
                 <h4 class="font-playfair text-sm tracking-widest mb-4 text-[#D4AF37]">快速導覽</h4>
                 <ul class="space-y-2 text-xs text-[#AAA] font-light">
-                    <li><a href="#courses" class="hover:text-[#D4AF37]">體驗課程</a></li>
-                    <li><a href="#custom" class="hover:text-[#D4AF37]">珠寶訂製</a></li>
-                    <li><a href="#handdrawn" class="hover:text-[#D4AF37]">手繪/手寫系列</a></li>
-                    <li><a href="#gallery" class="hover:text-[#D4AF37]">作品展示</a></li>
+                    <li><a href="courses.html" class="hover:text-[#D4AF37]">體驗課程</a></li>
+                    <li><a href="custom.html" class="hover:text-[#D4AF37]">珠寶訂製</a></li>
+                    <li><a href="handdrawn.html" class="hover:text-[#D4AF37]">手繪/手寫系列</a></li>
+                    <li><a href="gallery.html" class="hover:text-[#D4AF37]">作品展示</a></li>
                 </ul>
             </div>
         </div>
@@ -235,122 +140,5 @@
             &copy; 2026 Jinma Atelier 小金馬金工. All Rights Reserved.
         </div>
     </footer>
-
-    <!-- 互動 JavaScript：控制詳細資料彈跳視窗 -->
-    <script>
-        // 內容資料庫：妳可以隨時在這裡修改每個項目的詳細文字
-        const detailsData = {
-            "course-1": {
-                title: "手作對戒金工體驗",
-                tag: "熱門體驗 | 約 2.5 - 3 小時",
-                desc: "由專業金工師傅引導，從金屬條狀的鋸切、敲擊獨特的槌目與手感紋理，到精準的焊接與多道拋光工序。雙人同行不僅能獲得專屬對戒，更能共同創造難忘的回憶。",
-                price: "體驗價：2,200 NTD 起 / 位",
-                note: "包含：嚴選925純銀材料、精美包裝盒與現場職人指導。"
-            },
-            "course-2": {
-                title: "珠寶鑲嵌手作體驗",
-                tag: "進階工藝 | 約 3 小時",
-                desc: "帶領學員深入探索寶石的世界。親手挑選屬於自己的璀璨晶石，學習基礎爪鑲與包鑲技巧，將寶石穩固且美觀地鑲嵌於銀飾底座中。",
-                price: "體驗價：依挑選寶石與款式另計",
-                note: "包含：基礎鑲嵌工具使用、嚴選晶石與金工指導。"
-            },
-            "custom-1": {
-                title: "婚戒與求婚戒專屬訂製",
-                tag: "高級珠寶訂製",
-                desc: "量身打造獨一無二的愛情信物。我們提供一對一私密設計諮詢，從戒台線條比例（如霧面質感、金屬雙色搭配）到高品質鑽石與彩色寶石挑選，完美實現夢想藍圖。",
-                price: "採預約諮詢後報價",
-                note: "流程：線上預約 -> 工作室諮詢 -> 3D設計確認 -> 匠人手作交付。"
-            },
-            "custom-2": {
-                title: "彩色寶石與玉石鑲嵌",
-                tag: "高級珠寶訂製",
-                desc: "結合專業寶石鑑定視野與金工美學，精選天然彩色寶石與精緻玉件，設計出兼具現代時尚感與典藏價值的藝術珠寶。",
-                price: "採預約諮詢後報價",
-                note: "可代客尋石、鑑定諮詢與舊金台改造。"
-            },
-            "custom-3": {
-                title: "紀念日與胸針雕塑",
-                tag: "高級珠寶訂製",
-                desc: "將自然花草意象（如呼應勝亞寶石競賽的百合與水滴設計）化為立體金屬雕塑，打造獨具藝術風格的高級胸針或擺件。",
-                price: "採預約諮詢後報價",
-                note: "量身雕刻與複合媒材運用。"
-            },
-            "hand-1": {
-                title: "兒童畫與手繪轉金屬",
-                tag: "童心手作系列",
-                desc: "完美保留並還原孩子稚嫩的筆觸或您親手繪製的線條，雕刻成立體感十足的純銀墜飾或胸針，讓純真時刻永恆保存。",
-                price: "訂製價：依圖面複雜度報價",
-                note: "請提供清晰手繪圖面掃描檔或照片。"
-            },
-            "hand-2": {
-                title: "手寫字跡與簽名字體",
-                tag: "手寫溫度系列",
-                desc: "將摯愛之人的親筆手寫祝福字句、簽名或重要日期，化為隨身佩戴的精緻純銀項鍊或手環，傳遞最深的情感連結。",
-                price: "訂製價：依字數與款式報價",
-                note: "完整保留筆鋒與墨跡細節。"
-            },
-            "hand-3": {
-                title: "聲波記憶與符碼雕刻",
-                tag: "聲波記憶系列",
-                desc: "將想說的話錄下，轉換成獨一無二的聲波線條，並結合金屬雕刻與寶石鑲嵌，封存屬於你們的聲音頻率與情感共鳴。",
-                price: "訂製價：依款式報價",
-                note: "附贈專屬聲音波形解析說明卡。"
-            },
-            "work-1": {
-                title: "流金歲月彩色寶石鑲嵌戒",
-                tag: "精選作品 Portfolio",
-                desc: "以流線造型交織純銀戒台，並細緻鑲嵌多顆漸層色彩的晶石，展現豐富的光影層次。",
-                price: "典藏作品 / 可客製訂做",
-                note: "材質：925銀、彩色晶石、霧面手工拋光。"
-            },
-            "work-2": {
-                title: "手寫字跡純銀訂製項鍊",
-                tag: "精選作品 Portfolio",
-                desc: "完美復刻親筆手寫字跡的優雅項鍊，搭配精緻細鍊，佩戴時貼近心跳，充滿溫暖情感。",
-                price: "客製化作品",
-                note: "材質：925純銀、抗敏處理。"
-            },
-            "work-3": {
-                title: "經典槌目紋對戒體驗",
-                tag: "精選作品 Portfolio",
-                desc: "學員於工作室親手敲擊出的細緻槌目紋理，在光線下折射出溫潤而內斂的金屬光澤。",
-                price: "學員作品",
-                note: "工法：傳統鍛造與手工槌目成型。"
-            }
-        };
-
-        function openModal(id) {
-            const item = detailsData[id];
-            if (!item) return;
-
-            const contentHTML = `
-                <span class="text-[10px] tracking-[0.2em] text-[#D4AF37] uppercase block mb-2">${item.tag}</span>
-                <h3 class="font-playfair text-2xl font-normal text-[#232323] mb-4">${item.title}</h3>
-                <p class="text-sm text-[#555] font-light leading-relaxed mb-6">${item.desc}</p>
-                <div class="bg-[#D5E1DC]/20 p-4 border-l-2 border-[#D4AF37] mb-6 space-y-2">
-                    <p class="text-xs font-semibold text-[#232323]">${item.price}</p>
-                    <p class="text-xs text-[#666] font-light">${item.note}</p>
-                </div>
-                <div class="text-right">
-                    <a href="#contact" onclick="closeModal()" class="inline-block px-6 py-2.5 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">立即預約諮詢</a>
-                </div>
-            `;
-
-            document.getElementById('modalContent').innerHTML = contentHTML;
-            document.getElementById('detailModal').classList.remove('hidden');
-        }
-
-        function closeModal() {
-            document.getElementById('detailModal').classList.add('hidden');
-        }
-
-        // 點擊背景空白處也可以關閉視窗
-        window.onclick = function(event) {
-            const modal = document.getElementById('detailModal');
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-    </script>
 </body>
 </html>
