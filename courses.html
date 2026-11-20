@@ -42,7 +42,7 @@
     </header>
 
     <!-- 課程主內容 -->
-    <main class="py-20 px-6 max-w-5xl mx-auto space-y-20">
+    <main class="py-20 px-6 max-w-7xl mx-auto space-y-20">
         <div class="text-center max-w-2xl mx-auto">
             <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Workshop Experience</span>
             <h1 class="font-playfair text-4xl font-light tracking-wide text-[#232323] mb-4">金工體驗課程</h1>
@@ -50,7 +50,56 @@
             <p class="text-xs text-[#666] mt-4 font-light leading-relaxed">在充滿藝術色彩的工作室中，放下日常紛擾，親手為自己或摯愛敲打出深刻的回憶。</p>
         </div>
 
-       <!-- 1. 工作室環境展示 -->
+        <!-- 1. 課程總覽（左右並排） -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            <!-- 左側：珠寶課程 -->
+            <div class="bg-white border border-[#EAE5D9] p-8 md:p-10 shadow-sm flex flex-col justify-between space-y-8">
+                <div class="space-y-8">
+                    <div class="text-center">
+                        <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Professional Course</span>
+                        <h2 class="font-playfair text-3xl mb-3 text-[#232323]">珠寶課程</h2>
+                        <p class="text-xs text-[#666] font-light max-w-md mx-auto leading-relaxed">深入體驗設計寶石及金屬造型的過程，學習專業工藝與鑲嵌技術。</p>
+                    </div>
+                    <!-- 珠寶課程多張照片展示 -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="workshop6.JPG" class="w-full h-full object-cover" alt="珠寶課程 1"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="workshop2.JPG" class="w-full h-full object-cover" alt="珠寶課程 2"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="workshop3.JPG" class="w-full h-full object-cover" alt="珠寶課程 3"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="workshop4.JPG" class="w-full h-full object-cover" alt="珠寶課程 4"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="workshop5.JPG" class="w-full h-full object-cover" alt="珠寶課程 5"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="workshop7.JPG" class="w-full h-full object-cover" alt="珠寶課程 6"></div>
+                    </div>
+                </div>
+                <div class="text-center pt-2">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqj4dy5x5Cdtt9TnjotFWNMivUqwnIwynIuPPRmkJ765k6zg/viewform?usp=header" target="_blank" class="inline-block px-8 py-3 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">預約珠寶課程</a>
+                </div>
+            </div>
+
+            <!-- 右側：手作對戒課程 -->
+            <div class="bg-white border border-[#EAE5D9] p-8 md:p-10 shadow-sm flex flex-col justify-between space-y-8">
+                <div class="space-y-8">
+                    <div class="text-center">
+                        <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Couple Workshop</span>
+                        <h2 class="font-playfair text-3xl mb-3 text-[#232323]">手作對戒課程</h2>
+                        <p class="text-xs text-[#666] font-light max-w-md mx-auto leading-relaxed">無論是單人體驗或是雙人同行，親手為戒指打造無可取代的溫度，留下最美紀念。</p>
+                    </div>
+                    <!-- 對戒課程多張照片展示 -->
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="ring1.JPG" class="w-full h-full object-cover" alt="手作對戒 1"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="ring2.JPG" class="w-full h-full object-cover" alt="手作對戒 2"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="ring3.jpg" class="w-full h-full object-cover" alt="手作對戒 3"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="ring4.JPG" class="w-full h-full object-cover" alt="手作對戒 4"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="ring5.JPG" class="w-full h-full object-cover" alt="手作對戒 5"></div>
+                        <div class="h-48 sm:h-56 overflow-hidden"><img src="ring6.JPG" class="w-full h-full object-cover" alt="手作對戒 6"></div>
+                    </div>
+                </div>
+                <div class="text-center pt-2">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqj4dy5x5Cdtt9TnjotFWNMivUqwnIwynIuPPRmkJ765k6zg/viewform?usp=header" target="_blank" class="inline-block px-8 py-3 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">預約手作對戒課程</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. 工作室環境展示 -->
         <div class="bg-white border border-[#EAE5D9] p-8 md:p-12 shadow-sm space-y-8">
             <div class="text-center">
                 <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Studio Space</span>
@@ -59,61 +108,6 @@
             </div>
             <div class="h-96 overflow-hidden">
                 <img src="studio1.jpg" class="w-full h-full object-contain" alt="工作室環境">
-            </div>
-        </div>
-
-        <!-- 2. 體驗課程價目表 -->
-        <div class="bg-white border border-[#EAE5D9] p-8 md:p-12 shadow-sm space-y-4">
-            <div class="text-center">
-                <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Pricing & Plans</span>
-                <h2 class="font-playfair text-3xl mb-3 text-[#232323]">體驗課程價目表</h2>
-                <p class="text-xs text-[#666] font-light max-w-xl mx-auto">體驗課程方案與詳細說明</p>
-            </div>
-            <div class="max-w-xl mx-auto border border-[#EAE5D9] p-2 bg-[#FBF9F5]">
-                <img src="price1.jpg" class="w-full object-contain" alt="體驗課程價目表">
-            </div>
-        </div>
-
-        <!-- 3. 珠寶課程 -->
-        <div class="bg-white border border-[#EAE5D9] p-8 md:p-12 shadow-sm space-y-8">
-            <div class="text-center">
-                <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Professional Course</span>
-                <h2 class="font-playfair text-3xl mb-3 text-[#232323]">珠寶課程</h2>
-                <p class="text-xs text-[#666] font-light max-w-xl mx-auto">深入體驗設計寶石及金屬造型的過程，學習專業工藝與鑲嵌技術。</p>
-            </div>
-            <!-- 珠寶課程多張照片展示 (workshop1 ~ workshop5) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="h-64 overflow-hidden"><img src="workshop6.JPG" class="w-full h-full object-cover" alt="珠寶課程 1"></div>
-    <div class="h-64 overflow-hidden"><img src="workshop2.JPG" class="w-full h-full object-cover" alt="珠寶課程 2"></div>
-    <div class="h-64 overflow-hidden"><img src="workshop3.JPG" class="w-full h-full object-cover" alt="珠寶課程 3"></div>
-    <div class="h-64 overflow-hidden"><img src="workshop4.JPG" class="w-full h-full object-cover" alt="珠寶課程 4"></div>
-    <div class="h-64 overflow-hidden"><img src="workshop5.JPG" class="w-full h-full object-cover" alt="珠寶課程 5"></div>
-    <div class="h-64 overflow-hidden"><img src="workshop7.JPG" class="w-full h-full object-cover" alt="珠寶課程 6"></div>
-
-            </div>
-            <div class="text-center pt-4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqj4dy5x5Cdtt9TnjotFWNMivUqwnIwynIuPPRmkJ765k6zg/viewform?usp=header" target="_blank" class="inline-block px-8 py-3 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">預約珠寶課程</a>
-            </div>
-        </div>
-
-        <!-- 4. 手作對戒課程 -->
-        <div class="bg-white border border-[#EAE5D9] p-8 md:p-12 shadow-sm space-y-8">
-            <div class="text-center">
-                <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Couple Workshop</span>
-                <h2 class="font-playfair text-3xl mb-3 text-[#232323]">手作對戒課程</h2>
-                <p class="text-xs text-[#666] font-light max-w-xl mx-auto">無論是單人體驗或是雙人同行，親手為戒指打造無可取代的溫度，留下最美紀念。</p>
-            </div>
-            <!-- 對戒課程多張照片展示 (ring1 ~ ring6) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
-                <div class="h-64 overflow-hidden"><img src="ring1.JPG" class="w-full h-full object-cover" alt="手作對戒 1"></div>
-                <div class="h-64 overflow-hidden"><img src="ring2.JPG" class="w-full h-full object-cover" alt="手作對戒 2"></div>
-                <div class="h-64 overflow-hidden"><img src="ring3.jpg" class="w-full h-full object-cover" alt="手作對戒 3"></div>
-                <div class="h-64 overflow-hidden"><img src="ring4.JPG" class="w-full h-full object-cover" alt="手作對戒 4"></div>
-                <div class="h-64 overflow-hidden"><img src="ring5.JPG" class="w-full h-full object-cover" alt="手作對戒 5"></div>
-                <div class="h-64 overflow-hidden"><img src="ring6.JPG" class="w-full h-full object-cover" alt="手作對戒 6"></div>
-            </div>
-            <div class="text-center pt-4">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqj4dy5x5Cdtt9TnjotFWNMivUqwnIwynIuPPRmkJ765k6zg/viewform?usp=header" target="_blank" class="inline-block px-8 py-3 bg-[#232323] text-[#FBF9F5] text-xs tracking-[0.2em] uppercase hover:bg-[#D4AF37] transition-all">預約手作對戒課程</a>
             </div>
         </div>
     </main>
