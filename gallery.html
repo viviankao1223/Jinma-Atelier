@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>精選作品展示 | 小金馬金工 Jinma Atelier</title>
+    <title>作品展示 | 小金馬金工 Jinma Atelier</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/chiron-goround-tc/index.css">
     <style>
@@ -41,29 +41,66 @@
         </div>
     </header>
 
-    <!-- 作品集主內容 -->
-    <main class="py-20 px-6 max-w-5xl mx-auto space-y-16">
+    <!-- 作品展示主內容 -->
+    <main class="py-20 px-6 max-w-6xl mx-auto space-y-16">
         <div class="text-center max-w-2xl mx-auto">
-            <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Artistic Portfolio</span>
-            <h1 class="font-playfair text-4xl font-light tracking-wide text-[#232323] mb-4">精選作品展示</h1>
+            <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] block mb-2">Portfolio & Moments</span>
+            <h1 class="font-playfair text-4xl font-light tracking-wide text-[#232323] mb-4">作品與花絮展示</h1>
             <div class="w-12 h-[1px] bg-[#D4AF37] mx-auto mt-4"></div>
-            <p class="text-xs text-[#666] mt-4 font-light leading-relaxed">探索小金馬金工歷年的匠心之作、競賽作品與細緻質感呈現。</p>
+            <p class="text-xs text-[#666] mt-4 font-light leading-relaxed">紀錄工作室的原創金工設計，以及每位學員在敲打與鑲嵌間留下的專注溫度。</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white border border-[#EAE5D9] p-4 shadow-sm">
-                <div class="h-96 overflow-hidden mb-4"><img src="work1.JPG" class="w-full h-full object-cover object-[50%_70%]" alt="精選作品 1"></div>
-                <span class="text-[10px] text-[#D4AF37] tracking-widest uppercase block mb-1">Masterpiece 01</span>
-                <h3 class="font-playfair text-xl text-[#232323]">珠寶鑲嵌創作</h3>
-                <p class="text-xs text-[#666] font-light mt-2">融合精緻金工與寶石鑲嵌技術的完美呈現。</p>
+        <!-- 1. 工作室作品 -->
+        <section class="bg-white border border-[#EAE5D9] p-8 md:p-12 shadow-sm space-y-8">
+            <div class="text-center">
+                <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Studio Collection</span>
+                <h2 class="font-playfair text-2xl md:text-3xl mb-3 text-[#232323]">工作室精選作品</h2>
+                <p class="text-xs text-[#666] font-light max-w-xl mx-auto">融合東方意象與當代細金工藝，呈現金屬與寶石交織的細膩質感。</p>
             </div>
-            <div class="bg-white border border-[#EAE5D9] p-4 shadow-sm">
-                <div class="h-96 overflow-hidden mb-4"><img src="work2.JPG" class="w-full h-full object-cover object-[50%_30%]" alt="精選作品 2"></div>
-                <span class="text-[10px] text-[#D4AF37] tracking-widest uppercase block mb-1">Masterpiece 02</span>
-                <h3 class="font-playfair text-xl text-[#232323]">精雕金工創作</h3>
-                <p class="text-xs text-[#666] font-light mt-2">細膩線條與金屬光影的相互交織。</p>
+            <!-- 一列 3~4 張尺寸（目前放 2 張工作室代表作，請確認檔名與副檔名） -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="aspect-square overflow-hidden bg-[#FBF9F5] border border-[#EAE5D9]/60">
+                    <img src="work1.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="工作室精選作品 1">
+                </div>
+                <div class="aspect-square overflow-hidden bg-[#FBF9F5] border border-[#EAE5D9]/60">
+                    <img src="work2.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="工作室精選作品 2">
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- 2. 珠寶課程花絮 -->
+        <section class="bg-white border border-[#EAE5D9] p-8 md:p-12 shadow-sm space-y-8">
+            <div class="text-center">
+                <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Jewelry Workshop</span>
+                <h2 class="font-playfair text-2xl md:text-3xl mb-3 text-[#232323]">珠寶課程花絮</h2>
+                <p class="text-xs text-[#666] font-light max-w-xl mx-auto">從寶石配置、爪鑲技法到金屬拋光，紀錄專屬珠寶誕生的每個專注瞬間。</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="aspect-square overflow-hidden"><img src="workshop6.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="珠寶課程花絮 1"></div>
+                <div class="aspect-square overflow-hidden"><img src="workshop2.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="珠寶課程花絮 2"></div>
+                <div class="aspect-square overflow-hidden"><img src="workshop3.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="珠寶課程花絮 3"></div>
+                <div class="aspect-square overflow-hidden"><img src="workshop4.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="珠寶課程花絮 4"></div>
+                <div class="aspect-square overflow-hidden"><img src="workshop5.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="珠寶課程花絮 5"></div>
+                <div class="aspect-square overflow-hidden"><img src="workshop7.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="珠寶課程花絮 6"></div>
+            </div>
+        </section>
+
+        <!-- 3. 對戒課程花絮 -->
+        <section class="bg-white border border-[#EAE5D9] p-8 md:p-12 shadow-sm space-y-8">
+            <div class="text-center">
+                <span class="text-[10px] tracking-widest text-[#D4AF37] uppercase block mb-1">Couple Ring Workshop</span>
+                <h2 class="font-playfair text-2xl md:text-3xl mb-3 text-[#232323]">對戒課程花絮</h2>
+                <p class="text-xs text-[#666] font-light max-w-xl mx-auto">退火、敲擊、焊接與打磨，雙手共同為彼此留下無可取代的紀念印記。</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="aspect-square overflow-hidden"><img src="ring1.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="對戒課程花絮 1"></div>
+                <div class="aspect-square overflow-hidden"><img src="ring2.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="對戒課程花絮 2"></div>
+                <div class="aspect-square overflow-hidden"><img src="ring3.jpg" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="對戒課程花絮 3"></div>
+                <div class="aspect-square overflow-hidden"><img src="ring4.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="對戒課程花絮 4"></div>
+                <div class="aspect-square overflow-hidden"><img src="ring5.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="對戒課程花絮 5"></div>
+                <div class="aspect-square overflow-hidden"><img src="ring6.JPG" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" alt="對戒課程花絮 6"></div>
+            </div>
+        </section>
     </main>
 
     <!-- 頁尾 -->
